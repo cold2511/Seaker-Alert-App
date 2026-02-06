@@ -1,13 +1,4 @@
-# global:
-#   scrape_interval: 5s
 
-# rule_files:
-#   - "alert.rules.yml"
-
-# scrape_configs:
-#   - job_name: "seaker-agent"
-#     static_configs:
-#       - targets: ["agent:8000"]
 global:
   scrape_interval: 5s
 
