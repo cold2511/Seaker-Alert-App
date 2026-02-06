@@ -1,0 +1,18 @@
+groups:
+- name: system_alerts
+  rules:
+  - alert: HighCPUUsage
+    expr: cpu_usage_percent > 80
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      description: "CPU usage above 80%"
+
+  - alert: LowDiskSpace
+    expr: (disk_used_gb / disk_total_gb) * 100 > 85
+    for: 1m
+    labels:
+      severity: warning
+    annotations:
+      description: "Disk usage above 85%"

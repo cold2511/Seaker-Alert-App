@@ -1,0 +1,8 @@
+route:
+  receiver: "telegram-alert"
+
+receivers:
+- name: "telegram-alert"
+  telegram_configs:
+  - bot_token: "8367092550:AAEe00gDQrb4fuyAyyZqXQOL3uzQZzKVEY8"
+    chat_id: 5546971299
